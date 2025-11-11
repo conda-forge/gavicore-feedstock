@@ -1,5 +1,5 @@
 {% set name = "gavicore" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gavicore-{{ version }}.tar.gz
-  sha256: 8352e453bcb80447279f75e1eed17acba97fe7d0c3f34cdc6279d306f51afbec
+  sha256: 59bae2aa1a9166d2f58f33f9f60a5ca5ee11606239be53facac69559000a56f8
 
 build:
   noarch: python
