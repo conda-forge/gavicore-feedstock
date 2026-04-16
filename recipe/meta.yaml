@@ -1,5 +1,5 @@
 {% set name = "gavicore" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gavicore-{{ version }}.tar.gz
-  sha256: 59bae2aa1a9166d2f58f33f9f60a5ca5ee11606239be53facac69559000a56f8
+  sha256: 786dbc9c8886277d49f515354bc94cbd4c06df7d5724622f868fb17175775263
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
+    - click
     - pydantic
     - typer
 
@@ -49,5 +50,12 @@ about:
 
 extra:
   recipe-maintainers:
+    - AliceBalfanz
+    - b-yogesh
+    - clarasb
     - forman
+    - konstntokas
     - pont-us
+    - TejasMorbagal
+    - thomasstorm
+    - TonioF
