@@ -24,6 +24,7 @@ requirements:
     - python >={{ python_min }}
     - click
     - pydantic
+    - pyyaml
     - typer
 
 test:
