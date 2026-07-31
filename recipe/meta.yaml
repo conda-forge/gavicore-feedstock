@@ -23,10 +23,9 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - click
     - pydantic
     - pyyaml
-    - typer
+    - typer >=0.26.0,<1
 
 test:
   imports:
